@@ -67,4 +67,29 @@ module.exports.routes = {
   'POST  /api/v1/login':                        { action: 'entrance/login' },
   'POST  /api/v1/signup':                       { action: 'entrance/signup' },
 
+  // Category routes
+  'GET /api/v1/category':                       { action: 'category/index' },
+  'POST /api/v1/category':                      { action: 'category/create' },
+  'PUT /api/v1/category/:id':                   { action: 'category/update' },
+
+  // Outlet Routes
+  'GET /api/v1/outlet':                         { action: 'outlet/index' },
+  'POST /api/v1/outlet':                        { action: 'outlet/create' },
+  'PUT /api/v1/outlet/:id':                     { action: 'outlet/update' },
+
+  // Sub Category
+  'GET /api/v1/item':                           { action: 'item/index' },
+  'POST /api/v1/item':                          { action: 'item/create' },
+  'PUT /api/v1/item/:id':                       { action: 'item/update' },
+
+  // Outlet Category
+  'GET /api/v1/outletCategory':                 { action: 'outletCategory/index' },
+  'POST /api/v1/outletCategory':                { action: 'outletCategory/create' },
+  'PUT /api/v1/outletCategory/:id':             { action: 'outletCategory/update' },
+
+  // Outlet Sub Category
+  'GET /api/v1/outletItem':                     { action: 'outletItem/index' },
+  'POST /api/v1/outletItem':                    { action: 'outletItem/create' },
+  'PUT /api/v1/outletItem/:id':                 { action: 'outletItem/update' },
+
 };

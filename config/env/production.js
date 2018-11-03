@@ -225,10 +225,10 @@ module.exports = {
     * https://sailsjs.com/config/session#?the-session-id-cookie                *
     *                                                                          *
     ***************************************************************************/
-    cookie: {
-      // secure: true,
-      maxAge: 24 * 60 * 60 * 1000,  // 24 hours
-    },
+    // cookie: {
+    //   // secure: true,
+    //   maxAge: 24 * 60 * 60 * 1000,  // 24 hours
+    // },
 
   },
 
@@ -255,10 +255,12 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+    onlyAllowOrigins: [
+      // 'https://example.com',
+      // 'https://staging.example.com',
+      process.env.MY_TOWN_PRODUCTION_HTTPS_API_URL,
+      process.env.MY_TOWN_PRODUCTION_HTTP_API_URL,
+    ],
 
 
     /***************************************************************************
@@ -327,7 +329,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
 
   },
 
