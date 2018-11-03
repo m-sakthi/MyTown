@@ -151,9 +151,11 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allowOrigins: [
+        // 'https://example.com',
+        process.env.MY_TOWN_PRODUCTION_HTTPS_API_URL,
+        process.env.MY_TOWN_PRODUCTION_HTTP_API_URL,
+      ]
     },
 
   },

@@ -41,6 +41,8 @@ module.exports = Object.assign({}, PRODUCTION_CONFIG, {
 
     onlyAllowOrigins: [
       'http://localhost:1337',
+      process.env.MY_TOWN_STAGING_HTTPS_API_URL,
+      process.env.MY_TOWN_STAGING_HTTP_API_URL,
       // 'https://example-staging.herokuapp.com',
       // 'http://example-staging.herokuapp.com',
       // 'https://staging.example.com',
